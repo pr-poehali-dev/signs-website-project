@@ -37,7 +37,7 @@ export default function Index() {
           </nav>
           <a
             href="tel:+74162000000"
-            className="flex items-center gap-2 font-oswald font-medium text-foreground hover:text-[hsl(var(--accent))] transition-colors"
+            className="flex items-center gap-2 font-oswald font-medium text-foreground hover:text-red-700 transition-colors"
           >
             <Icon name="Phone" size={16} />
             <span className="hidden sm:inline">+7 (4162) 00-00-00</span>
@@ -76,8 +76,8 @@ export default function Index() {
             <div className="grid grid-cols-2 gap-3 mb-10 animate-fade-up delay-300">
               {advantages.map((adv) => (
                 <div key={adv.text} className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'hsla(32,95%,50%,0.2)', border: '1px solid hsla(32,95%,50%,0.4)' }}>
-                    <Icon name={adv.icon} size={14} style={{ color: 'hsl(32,95%,50%)' }} />
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'hsla(0,82%,40%,0.25)', border: '1px solid hsla(0,82%,40%,0.5)' }}>
+                    <Icon name={adv.icon} size={14} style={{ color: 'hsl(0,82%,40%)' }} />
                   </div>
                   <span className="text-white/90 text-sm font-medium">{adv.text}</span>
                 </div>
@@ -85,7 +85,7 @@ export default function Index() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 animate-fade-up delay-400">
-              <button className="flex items-center justify-center gap-2 text-white font-oswald font-medium text-base uppercase tracking-wider px-8 py-4 rounded transition-all duration-200 hover:scale-[1.02]" style={{ background: 'hsl(32,95%,50%)' }}>
+              <button className="flex items-center justify-center gap-2 text-white font-oswald font-medium text-base uppercase tracking-wider px-8 py-4 rounded transition-all duration-200 hover:scale-[1.02]" style={{ background: 'hsl(0,82%,40%)' }}>
                 <Icon name="Calculator" size={18} />
                 Рассчитать стоимость
               </button>
@@ -114,7 +114,7 @@ export default function Index() {
       <section id="services" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
-            <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(32,95%,50%)' }}>Что мы делаем</p>
+            <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(0,82%,40%)' }}>Что мы делаем</p>
             <h2 className="font-oswald font-bold text-4xl md:text-5xl text-foreground uppercase">Наши услуги</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -122,16 +122,16 @@ export default function Index() {
               <div
                 key={s.title}
                 className="group border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                style={{ '--hover-border': 'hsl(32,95%,50%)' } as React.CSSProperties}
-                onMouseEnter={e => (e.currentTarget.style.borderColor = 'hsl(32,95%,50%)')}
+                style={{ '--hover-border': 'hsl(0,82%,40%)' } as React.CSSProperties}
+                onMouseEnter={e => (e.currentTarget.style.borderColor = 'hsl(0,82%,40%)')}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = '')}
               >
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6 transition-colors group-hover:bg-orange-50">
-                  <Icon name={s.icon} size={22} className="text-muted-foreground group-hover:text-orange-500 transition-colors" />
+                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6 transition-colors group-hover:bg-red-50">
+                  <Icon name={s.icon} size={22} className="text-muted-foreground group-hover:text-red-700 transition-colors" />
                 </div>
                 <h3 className="font-oswald font-semibold text-xl text-foreground uppercase mb-3">{s.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-                <div className="mt-6 flex items-center gap-2 text-sm font-medium text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="mt-6 flex items-center gap-2 text-sm font-medium text-red-700 opacity-0 group-hover:opacity-100 transition-opacity">
                   Подробнее <Icon name="ArrowRight" size={14} />
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function Index() {
       <section className="py-24 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
-            <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(32,95%,50%)' }}>Как мы работаем</p>
+            <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(0,82%,40%)' }}>Как мы работаем</p>
             <h2 className="font-oswald font-bold text-4xl md:text-5xl text-foreground uppercase">Вывеска под ключ<br />за 5 шагов</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
@@ -171,12 +171,12 @@ export default function Index() {
           <div>
             <h2 className="font-oswald font-bold text-3xl md:text-4xl uppercase mb-3">
               Получите расчёт<br />
-              <span style={{ color: 'hsl(32,95%,50%)' }}>за 30 минут</span>
+              <span style={{ color: 'hsl(0,82%,65%)' }}>за 30 минут</span>
             </h2>
             <p className="text-white/60 text-base">Пришлите фото фасада — сделаем визуализацию вывески бесплатно</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="flex items-center justify-center gap-2 text-white font-oswald font-medium text-base uppercase tracking-wider px-8 py-4 rounded transition-colors" style={{ background: 'hsl(32,95%,50%)' }}>
+            <button className="flex items-center justify-center gap-2 text-white font-oswald font-medium text-base uppercase tracking-wider px-8 py-4 rounded transition-colors" style={{ background: 'hsl(0,82%,40%)' }}>
               <Icon name="Send" size={18} />
               Отправить фото
             </button>
@@ -195,7 +195,7 @@ export default function Index() {
       <section id="portfolio" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-12">
-            <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(32,95%,50%)' }}>Наши работы</p>
+            <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(0,82%,40%)' }}>Наши работы</p>
             <h2 className="font-oswald font-bold text-4xl md:text-5xl text-foreground uppercase">Портфолио</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -227,7 +227,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(32,95%,50%)' }}>Связаться с нами</p>
+              <p className="font-oswald uppercase tracking-widest text-sm mb-3" style={{ color: 'hsl(0,82%,40%)' }}>Связаться с нами</p>
               <h2 className="font-oswald font-bold text-4xl md:text-5xl text-foreground uppercase mb-8">Контакты</h2>
               <div className="space-y-6">
                 {[
@@ -238,12 +238,12 @@ export default function Index() {
                 ].map((c) => (
                   <div key={c.label} className="flex items-start gap-4">
                     <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name={c.icon} size={18} style={{ color: 'hsl(32,95%,50%)' }} />
+                      <Icon name={c.icon} size={18} style={{ color: 'hsl(0,82%,40%)' }} />
                     </div>
                     <div>
                       <div className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{c.label}</div>
                       {c.href ? (
-                        <a href={c.href} className="text-foreground font-medium hover:text-orange-500 transition-colors">{c.value}</a>
+                        <a href={c.href} className="text-foreground font-medium hover:text-red-700 transition-colors">{c.value}</a>
                       ) : (
                         <span className="text-foreground font-medium">{c.value}</span>
                       )}
@@ -262,7 +262,7 @@ export default function Index() {
                     type="text"
                     placeholder="Иван Иванов"
                     className="w-full border border-border rounded px-4 py-3 text-sm focus:outline-none transition-colors"
-                    onFocus={e => (e.target.style.borderColor = 'hsl(32,95%,50%)')}
+                    onFocus={e => (e.target.style.borderColor = 'hsl(0,82%,40%)')}
                     onBlur={e => (e.target.style.borderColor = '')}
                   />
                 </div>
@@ -272,7 +272,7 @@ export default function Index() {
                     type="tel"
                     placeholder="+7 (___) ___-__-__"
                     className="w-full border border-border rounded px-4 py-3 text-sm focus:outline-none transition-colors"
-                    onFocus={e => (e.target.style.borderColor = 'hsl(32,95%,50%)')}
+                    onFocus={e => (e.target.style.borderColor = 'hsl(0,82%,40%)')}
                     onBlur={e => (e.target.style.borderColor = '')}
                   />
                 </div>
@@ -282,13 +282,14 @@ export default function Index() {
                     rows={3}
                     placeholder="Опишите вашу задачу или прикрепите фото фасада"
                     className="w-full border border-border rounded px-4 py-3 text-sm focus:outline-none transition-colors resize-none"
-                    onFocus={e => (e.target.style.borderColor = 'hsl(32,95%,50%)')}
+                    onFocus={e => (e.target.style.borderColor = 'hsl(0,82%,40%)')}
                     onBlur={e => (e.target.style.borderColor = '')}
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-foreground hover:bg-[hsl(20,10%,20%)] text-white font-oswald uppercase tracking-wider text-sm py-4 rounded transition-colors"
+                  className="w-full text-white font-oswald uppercase tracking-wider text-sm py-4 rounded transition-colors hover:opacity-90"
+                  style={{ background: 'hsl(0,82%,40%)' }}
                 >
                   Отправить заявку
                 </button>
